@@ -1,6 +1,7 @@
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
-import { Code2, Lightbulb, Rocket, Mail, Phone, MapPin, ExternalLink, FileText } from "lucide-react";
+import { Logo } from "./components/ui/logo";
+import { Code2, Lightbulb, Rocket, Mail, MapPin, ExternalLink, FileText } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import redHawkLogo from "figma:asset/331a09bc461faadeef89c665d6147080e647dfca.png";
 
@@ -11,8 +12,8 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Code2 className="size-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">Viable</span>
+            <Logo width={24} />
+            <span className="text-2xl font-bold text-gray-900">viable</span>
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
@@ -20,7 +21,7 @@ export default function App() {
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
           </div>
-          <Button>Get Started</Button>
+          <div />
         </div>
       </nav>
 
@@ -35,14 +36,6 @@ export default function App() {
               <p className="text-xl text-gray-600 mb-8">
                 We build scalable, innovative software solutions tailored to your business needs. From concept to deployment, we turn your vision into reality.
               </p>
-              <div className="flex gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  Start Your Project
-                </Button>
-                <Button size="lg" variant="outline">
-                  View Our Work
-                </Button>
-              </div>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
@@ -207,27 +200,19 @@ export default function App() {
                   <Mail className="size-6 text-blue-600" />
                 </div>
                 <p className="text-gray-900 font-semibold mb-1">Email</p>
-                <p className="text-gray-600">hello@viable.org</p>
+                <p className="text-gray-600">info@viable.sk</p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <Phone className="size-6 text-blue-600" />
-                </div>
-                <p className="text-gray-900 font-semibold mb-1">Phone</p>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                   <MapPin className="size-6 text-blue-600" />
                 </div>
-                <p className="text-gray-900 font-semibold mb-1">Location</p>
-                <p className="text-gray-600">San Francisco, CA</p>
+                <p className="text-gray-900 font-semibold mb-1">Contact</p>
+                <p className="text-gray-600">viable, s.r.o.<br/>Suchoňova 5724/18<br/>058 01 Poprad, Slovakia</p>
               </div>
             </div>
 
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Contact Us Today
-            </Button>
           </div>
         </div>
       </section>
@@ -236,8 +221,8 @@ export default function App() {
       <footer className="bg-gray-900 text-gray-400 py-12 px-6">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Code2 className="size-6 text-blue-500" />
-            <span className="text-xl font-bold text-white">Viable</span>
+            <Logo width={24} />
+            <span className="text-xl font-bold text-white">viable, s.r.o.</span>
           </div>
           <p className="mb-4">Custom Software Development Solutions</p>
           <p className="text-sm">© 2026 Viable. All rights reserved.</p>
