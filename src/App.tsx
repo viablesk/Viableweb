@@ -1,9 +1,9 @@
-import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { Logo } from "./components/ui/logo";
 import { Code2, Lightbulb, Rocket, Mail, MapPin, ExternalLink, FileText } from "lucide-react";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import redHawkLogo from "figma:asset/331a09bc461faadeef89c665d6147080e647dfca.png";
+import redHawkLogo from "./assets/redhawk.png";
+import fzLogo from "./assets/fz.png";
 
 export default function App() {
   return (
@@ -111,15 +111,15 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all group">
               <CardContent className="pt-8 pb-8">
-                <div className="bg-blue-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
-                  <FileText className="size-7 text-blue-600" />
+                <div className="w-56 h-56 rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+                  <img src={fzLogo} alt="Faktura Zdarma Logo" className="w-full h-full object-contain" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Free Invoice</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Faktúra Zdarma</h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   A modern invoicing application that simplifies billing and payment tracking for freelancers and small businesses.
                 </p>
                 <a 
-                  href="https://moja--fakturazdarma.netlify.app/" 
+                  href="https://fakturazdarma.netlify.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold group-hover:gap-3 transition-all"
